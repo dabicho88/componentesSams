@@ -1,0 +1,209 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, interactive-widget=resizes-content"/>
+<div class="tarjetitas">
+<style type="text/css">
+body{
+background: #fff;
+/*background: #10164F;
+background: linear-gradient(0deg,rgba(16, 22, 79, 1) 22%, rgba(99, 105, 171, 1) 100%, rgba(16, 22, 79, 1) 81%);*/
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  overflow-x:hidden;
+}
+@font-face {
+    font-family: 'gibsonbold';
+    src: url('https://i5.walmartimages.com/dfw/4ff9c6c9-c7bc/k2-_7446894b-fdb9-4e54-9bee-e6a9875dc513.v1.awoff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gibsonregular';
+    src: url('https://i5.walmartimages.com/dfw/4ff9c6c9-49c8/k2-_20c31a19-9e98-4c6a-8710-d4c572d7aa31.v1.awoff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gibsonsemibold';
+    src: url('https://i5.walmartimages.com/dfw/4ff9c6c9-a213/k2-_f9340216-c0c1-4989-b744-cca39d67eae3.v1.awoff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.tarjetitas{
+  display: grid;
+  grid-template-areas: 
+  'titulo titulo'/*AQUÍ SE AJUSTA EL ACOMODO DEL TITULO DEPENDIENDO LA CANTIDAD DE COLUMNAS*/
+  'cardNo1 cardNo2'
+  'cardNo3 cardNo4';/*AQUÍ SE AJUSTA EL ACOMODO DE LAS TARJETAS SI SON 4 EN HILERA O 2 Y 2*/
+  grid-template-columns: 50% 50%;/*AQUÍ SE AJUSTA EL ACOMODO LAS COLUMNAS*/
+  width:100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+  flex-wrap: wrap;
+  font-family: 'gibsonregular' !important;
+  justify-content: center;
+}
+.titulo{
+  grid-area:titulo ;  
+}
+.cardNo1{
+  grid-area:cardNo1 ;  
+}
+.cardNo2{
+  grid-area:cardNo2 ;  
+}
+.cardNo3{
+  grid-area:cardNo3 ;  
+}
+.cardNo4{
+  grid-area:cardNo4 ;  
+}
+h2{
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: transparent;
+  font-family: 'gibsonbold'!important;
+  text-align: center;
+
+  /*aqui se dita tamaño de la fuente, buscar en  google clamp generator css*/
+  font-size: clamp(50px, 8vw, 100px);
+  line-height: clamp(53px, 8.3vw, 103px);
+  /*aqui se dita tamaño de la fuente, buscar en  google clamp generator css*/
+
+  background-color: #2f8d46;
+  background-image: url("https://s7.ezgif.com/tmp/ezgif-7e849d0874b57895.gif");/* AQUÍ SE PONE LA URL DEL GIF O JPG QUE SE SUBE EN TEMPO PARA QUE SEA EL FONDO DEL TÍTULO PUEDE SER ANIMADO O ESTÁTICO*/
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-size: 100% auto;
+  background-position: center;
+  text-transform: uppercase;
+  }
+.tarjetaOne{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  box-sizing: border-box;
+  position: relative;
+}
+.imgFrente{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #fff;
+  transform: perspective(800px) rotateY(00deg);
+  backface-visibility: hidden;
+  transition:linear .5s;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+}
+.tarjetaOne p{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  transform: perspective(800px) rotateY(180deg);
+  backface-visibility: hidden;
+  transition: linear .5s;
+
+  /*aqui se dita tamaño de la fuente, buscar en  google clamp generator css*/
+  font-size: clamp(12px, 3vw, 18px);
+  line-height: clamp(13px, 3.2vw, 21px);
+  /*aqui se dita tamaño de la fuente, buscar en  google clamp generator css*/
+
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 8px;
+}
+.tarjetaOne.girado .imgFrente{
+  transform: perspective(800px) rotateY(180deg);
+}
+.tarjetaOne.girado p{
+  transform: perspective(800px) rotateY(360deg);
+}
+.imgBack{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+@media screen and (max-width:700px){
+.tarjetitas{
+  display: grid;
+  grid-template-areas: 
+  'titulo titulo'
+  'cardNo1 cardNo2'
+  'cardNo3 cardNo4';
+  grid-template-columns: 50% 50% ;
+}
+}
+</style>
+
+<h2 class="titulo">
+  Disfruta el mundial <!-- TÍTULO CON UN MÁXIMO DE 40 CARACTERES-->
+</h2>
+
+<div class="tarjetaOne cardNo1">
+<img src="https://i5.walmartimages.com/dfw/4ff9c6c9-102c/k2-_58301d7f-9974-4fd6-bc52-11a9276692e5.v1.jpg" class="imgFrente"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  <p>
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-5717/k2-_8d5cd46e-a6d2-4392-b85a-cafe0aef643a.v1.jpg" class="imgBack"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  </p>
+</div>
+<div class="tarjetaOne cardNo2">
+<img src="https://i5.walmartimages.com/dfw/4ff9c6c9-102c/k2-_58301d7f-9974-4fd6-bc52-11a9276692e5.v1.jpg" class="imgFrente"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  <p>
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-5717/k2-_8d5cd46e-a6d2-4392-b85a-cafe0aef643a.v1.jpg" class="imgBack"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  </p>
+</div>
+<div class="tarjetaOne cardNo3">
+<img src="https://i5.walmartimages.com/dfw/4ff9c6c9-102c/k2-_58301d7f-9974-4fd6-bc52-11a9276692e5.v1.jpg" class="imgFrente"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  <p>
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-5717/k2-_8d5cd46e-a6d2-4392-b85a-cafe0aef643a.v1.jpg" class="imgBack"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  </p>
+</div>
+<div class="tarjetaOne cardNo4">
+<img src="https://i5.walmartimages.com/dfw/4ff9c6c9-102c/k2-_58301d7f-9974-4fd6-bc52-11a9276692e5.v1.jpg" class="imgFrente"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  <p>
+  <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-5717/k2-_8d5cd46e-a6d2-4392-b85a-cafe0aef643a.v1.jpg" class="imgBack"> <!-- AQUÍ SE AGREGA LA IMAGEN DE TEMPO CON LA MEDIDA DE 791×445 PX-->
+  </p>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+const lasCards = document.querySelectorAll('.tarjetaOne');
+const bodyIframe = window.document;
+
+
+
+  lasCards.forEach((card) =>{
+    card.addEventListener('click', () =>{
+      card.classList.contains('girado')? card.classList.remove('girado') : card.classList.add('girado')
+    });
+  });
+
+
+</script>
+</div>
+
