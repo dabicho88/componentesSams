@@ -225,7 +225,7 @@ textarea
 .cart-button-in-wrap{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 
 
-.view-container{min-height:500px;padding-top:105px}
+.view-container{min-height:500px;padding-top:10px}
 .help-list{width:100%;margin-bottom:50px;padding-left:4.5%}
 .help-list h2{margin-bottom:20px}
 .help-list.ulHelp{padding-left:0px}

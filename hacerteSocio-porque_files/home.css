@@ -86,7 +86,7 @@ h1.h1:after{content:"";display:block;width:40px;margin-top:4px;height:5px !impor
 
 .full-container{width:98.243046%;margin:0 0.878477%}
 .menu-container{border-right:1px solid #e7e7e7;display:table-cell;min-height:300px;vertical-align:top;width:25%}
-.info-container{-webkit-box-sizing:border-box;box-sizing:border-box;display:table-cell;margin:10px 0;padding-left:7.5%;padding-right:2%;padding-top:40px;padding-bottom:38px;width:75%}
+.info-container{-webkit-box-sizing:border-box;box-sizing:border-box;display:block;margin:10px auto;padding:2%;padding-top:40px;padding-bottom:38px;width:95%}
 .loginColumn{padding:40px 7.5% 38px 2%;border-right:1px solid rgba(151,151,151,0.6) !important}
 .phone .loginColumn{border-right:1px solid transparent !important}
 .loginColumn,.registrationColumn{padding-top:0px;padding-bottom:0px}
